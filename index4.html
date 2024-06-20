@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/Regex.js"></script>
+    <title>RegEx</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .phoneForm,
+        #textForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container label {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .container input {
+            width: 350px;
+            font-size: 15px;
+            font-weight: 400;
+            color: gray;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 0.01rem solid gray;
+            margin-top: 20px;
+        }
+
+        .phoneFormat {
+            display: none;
+            text-align: center;
+            font-size: 0.75rem;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .container .invalid {
+            color: red;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <form id="phoneForm" class="phoneForm">
+            <label for="phoneNumber">Please enter your phone number</label>
+            <input type="text" id="phoneNumber" class="phoneNumber" autocomplete="off">
+
+            <p class="phoneFormat">
+                Examples: (555)555-5555 or 123-456-7899
+            </p>
+        </form> -->
+
+        <form id="textForm">
+            <label 
+                for="textEntry">
+                Please enter some text:
+            </label>
+            
+            <input 
+                type="text" 
+                id="textEntry" 
+                autocomplete="off">
+        </form>
+    </div>
+</body>
+
+</html>
